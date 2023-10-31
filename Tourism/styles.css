@@ -1,0 +1,299 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image to the body */
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Fixed background image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #ddd6d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+    background-color: rgba(149, 171, 243, 0.7);
+    padding: 40px;
+    text-align: center;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Style the footer */
+/* footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+footer{
+    
+    color: #090909;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;    
+    bottom: 0;
+    width:100%;
+}
+
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 80%;
+    }
+}
+
+
+/* Add styles for the heritage site page */
+.heritage-site {
+    display: flex;
+    background-color: #efd3d3; /* Background color for the box */
+    padding: 200px;
+    border-radius: 10px;
+}
+
+.heritage-site-info {
+    flex: 1;
+    padding: 30px;
+}
+
+.heritage-site-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.heritage-site-info p {
+    font-size: 18px;
+}
+
+.heritage-site-image {
+    flex: 1;
+}
+
+.heritage-site-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ============Heritage Sites============= */
+
+.heritage-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .heritage-item {
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heritage-item img {
+    width: 100%; /* Make the images fill the container */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .heritage-item h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  /* =====================Gallery======================== */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+        width: 150px;
+        height: 100px;
+    }
+  }
+  
+
+/* ==========================Hotel Booking============================== */
+
+.booking-form {
+    max-width: 700px;
+    width: 90%;
+    margin: 5px auto;
+    background-color: #dc7f7f9d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="email"],
+  .booking-form input[type="date"],
+  .booking-form input[type="number"],
+  .booking-form textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .booking-form textarea {
+    height: 40px; /* Reduced the height of the textarea */
+  }
+  
+  .booking-form input[type="submit"] {
+    background-color: rgb(18, 155, 155);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 30%; 
+    margin-top: px; 
+  }
+  
+  .booking-form input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(18, 155, 155);
+    border: 1px solid black;
+  }
+ 
+  
+/* Contact page styling */
+  .contact-form {
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: rgb(18, 155, 155);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(18, 155, 155);
+    border: 1px solid black;
+  }
