@@ -30,8 +30,6 @@ This website is dedicated to promoting the enchanting city of Udaipur, providing
 
 ## Getting Started
 
-To view the website, simply [click here](<your-website-url>).
-
 To run the website locally:
 
 1. Clone this repository: `git clone <repository-url>`
